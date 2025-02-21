@@ -14,7 +14,7 @@ describe('template spec', () => {
       });
   
 
-  it('Connex', () => {
+  it('Connex ok', () => {
 
         cy.get('#user-name').type(emailFake)
         cy.get('#password').type(MP)
@@ -25,7 +25,7 @@ describe('template spec', () => {
   }) 
 
 
-  it('Selection', () => {
+  it('Selection prix', () => {
 
     cy.get('#user-name').type(emailok)
     cy.get('#password').type(MP)
@@ -40,7 +40,7 @@ describe('template spec', () => {
   });
 
 
-  it('addPrice1', () => {
+  it('addPrice dans pannier', () => {
 
     cy.get('#user-name').type(emailok)
     cy.get('#password').type(MP)
@@ -56,7 +56,7 @@ describe('template spec', () => {
     cy.get('.btn_action.checkout_button').click()
   });
 
-  it('form', () => {
+  it('remplir form', () => {
 
     cy.get('#user-name').type(emailok)
     cy.get('#password').type(MP)
