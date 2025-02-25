@@ -39,6 +39,7 @@ class ConnexF {
     
     submit () {
         cy.get('#login-button').click();
+       cy.get('h3[data-test="error"]').contains('Sorry, this user has been locked out.').should('be.visible')
     }
 
 }
